@@ -116,16 +116,6 @@ describe 'Movie' do
       end
     end
 
-    context 'destroying' do
-      it 'can destroy a single item' do
-        can_destroy_a_single_item
-        expect(Movie.find_by(title: "That One Where the Guy Kicks Another Guy Once")).to be_nil
-      end
 
-      it 'can destroy all items at once' do
-        can_destroy_all_items_at_once
-        expect(Movie.all.size).to eq(0)
-      end
-    end
   end
 end
