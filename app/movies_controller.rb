@@ -78,7 +78,6 @@ def can_update_using_update_method
   Movie.create(title: "Wat?")
   Movie.update(title: "Wat, huh?")
   Movie.save
-  __
 end
 
 def can_update_multiple_items_at_once
